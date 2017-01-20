@@ -18,14 +18,17 @@ Example log statements:
 ----
 log.info "Configuration data source"
 
+log.debug "Params: {}", params
+
 try {
     ..
 }
 catch (Exception e) {
-    log.error "Error: ${e.message}", e
+    log.error "Error: {}", e.message, e
 }
 ----
 
+More examples can be found in the http://www.slf4j.org/faq.html#string_or_object[slf4j FAQ]
 
 === Description
 
